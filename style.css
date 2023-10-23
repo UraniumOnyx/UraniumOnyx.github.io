@@ -1,15 +1,19 @@
 body {
     font-family: Arial, sans-serif;
-    color : black;
+    background-color: #000; /* Couleur de fond noire */
+    color: white; /* Couleur du texte par défaut */
 }
 
 header {
     background: url('espace.jpg') no-repeat center;
     background-size: cover;
     text-align: center;
-    color: black;
+    color: white;
     padding: 150px 0;
 }
+
+/* ... (le reste du CSS reste inchangé) */
+
 
 h1 {
     font-size: 2em;
