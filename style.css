@@ -12,9 +12,6 @@ header {
     padding: 150px 0;
 }
 
-/* ... (le reste du CSS reste inchangé) */
-
-
 h1 {
     font-size: 2em;
 }
@@ -53,4 +50,7 @@ section {
 #contact {
     background-color: #222;
     color: white;
+}
+footer{
+    background-color: #333;
 }
