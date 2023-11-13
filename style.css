@@ -4,6 +4,11 @@ body {
     color: white; /* Couleur du texte par défaut */
 }
 
+img {
+    height: 200px;
+    width: 50px;
+}
+
 header {
     background: url('espace.jpg') no-repeat center;
     background-size: cover;
@@ -12,11 +17,9 @@ header {
     padding: 150px 0;
 }
 
-/* ... (le reste du CSS reste inchangé) */
-
-
 h1 {
     font-size: 2em;
+    color : white;
 }
 
 nav ul {
