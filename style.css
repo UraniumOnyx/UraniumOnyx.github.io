@@ -166,14 +166,17 @@ section .title::after{
 
 
 /* home section styling */
+.home, .services {
+    background: url(https://img.freepik.com/free-vector/dark-low-poly-background_1048-7971.jpg?size=626&ext=jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 .home{
     display: flex;
-    background: url(https://img.freepik.com/free-vector/dark-low-poly-background_1048-7971.jpg?size=626&ext=jpg) no-repeat center;
     height: 100vh;
     color: #fff;
     min-height: 500px;
-    background-size: cover;
-    background-attachment: fixed;
     font-family: 'Ubuntu', sans-serif;
 }
 .home .max-width{
@@ -217,6 +220,10 @@ section .title::after{
 }
 
 /* about section styling */
+.about{
+    background: url("white.jpg") center;
+    background-attachment: fixed;
+}
 .about .title::after{
     content: "Qui suis-je";
 }
@@ -263,7 +270,6 @@ section .title::after{
 /* services section styling */
 .services, .teams{
     color:#fff;
-    background: #111;
 }
 .services .title::before,
 .teams .title::before{
@@ -307,10 +313,11 @@ section .title::after{
 }
 
 /* skills section styling */
-
-.skills .title::after{
-    content: "Qu'est ce que je connais";
+.skills{
+    background: url("white.jpg") center;
+    background-attachment: fixed;
 }
+
 .skills .skills-content .column{
     width: calc(50% - 30px);
 }
@@ -368,6 +375,9 @@ section .title::after{
 .skills-content .right .html::before{
     width: 75%;
 }
+.skills-content .right .sql::before{
+    width: 70%;
+}
 .skills-content .right .css::before{
     width: 60%;
 }
@@ -384,63 +394,9 @@ section .title::after{
     width: 90%;
 }
 
-.teams .carousel .card{
-    background: #222;
-    border-radius: 6px;
-    padding: 25px 35px;
-    text-align: center;
-    overflow: hidden;
-    transition: all 0.3s ease;
-}
-.teams .carousel .card:hover{
-    background: #6e6e6e;
-}
-.teams .carousel .card .box{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-}
-.teams .carousel .card:hover .box{
-    transform: scale(1.05);
-}
-.teams .carousel .card .text{
-    font-size: 25px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
-}
-.teams .carousel .card img{
-    height: 150px;
-    width: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 5px solid #6e6e6e;
-    transition: all 0.3s ease;
-}
-.teams .carousel .card:hover img{
-    border-color: #fff;
-}
-.owl-dots{
-    text-align: center;
-    margin-top: 20px;
-}
-.owl-dot{
-    height: 13px;
-    width: 13px;
-    margin: 0 5px;
-    outline: none!important;
-    border-radius: 50%;
-    border: 2px solid #6e6e6e!important;
-    transition: all 0.3s ease;
-}
-.owl-dot.active{
-    width: 35px;
-    border-radius: 14px;
-}
-.owl-dot.active,
-.owl-dot:hover{
-    background: #6e6e6e!important;
+.contact{
+    background: url("white.jpg") center;
+    background-attachment: fixed;
 }
 
 /* contact section styling */
