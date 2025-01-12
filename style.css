@@ -227,6 +227,9 @@ section .title::after{
 .about .title::after{
     content: "Qui suis-je";
 }
+.title::after{
+    content: "Qu'ai-je fais"
+}
 .about .about-content .left{
     width: 45%;
 }
