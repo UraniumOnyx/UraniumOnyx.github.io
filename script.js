@@ -33,20 +33,24 @@ $(document).ready(function(){
         $('.menu-btn i').toggleClass("active");
     });
 
-    // typing text animation script
-    var typed = new Typed(".typing", {
-        strings: ["Developpeuse Web", "Experte en méthode Agile", "Administratrice réseau en devenir"],
-        typeSpeed: 100,
-        backSpeed: 60,
-        loop: true
-    });
+    if (document.querySelector(".typing")) {
+        new Typed(".typing", {
+            strings: ["Développeuse Web", "Experte en méthode Agile", "Administratrice réseau en devenir"],
+            typeSpeed: 100,
+            backSpeed: 60,
+            loop: true
+        });
+    }
 
-    var typed = new Typed(".typing-2", {
-        strings: ["Developpeuse Web", "Experte en méthode Agile", "Administratrice réseau en devenir"],
-        typeSpeed: 100,
-        backSpeed: 60,
-        loop: true
-    });
+    if (document.querySelector(".typing-2")) {
+        new Typed(".typing-2", {
+            strings: ["Développeuse Web", "Experte en méthode Agile", "Administratrice réseau en devenir"],
+            typeSpeed: 100,
+            backSpeed: 60,
+            loop: true
+        });
+    }
+
 
     // owl carousel script
     $('.carousel').owlCarousel({
@@ -71,4 +75,12 @@ $(document).ready(function(){
             }
         }
     });
+
+    $('.toggle-btn').click(function () {
+        var content = $(this).siblings('.project-content');
+        var isVisible = content.is(':visible');
+        content.slideToggle(200);
+        $(this).text(isVisible ? 'Voir plus' : 'Voir moins');
+    });
+
 });
