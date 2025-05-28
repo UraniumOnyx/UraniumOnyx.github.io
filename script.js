@@ -35,14 +35,14 @@ $(document).ready(function(){
 
     // typing text animation script
     var typed = new Typed(".typing", {
-        strings: ["Developpeur Web", "Expert en méthode Agile", "Administrateur réseau en devenir"],
+        strings: ["Developpeuse Web", "Experte en méthode Agile", "Administratrice réseau en devenir"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
     });
 
     var typed = new Typed(".typing-2", {
-        strings: ["Developpeur Web", "Expert en méthode Agile", "Administrateur réseau en devenir"],
+        strings: ["Developpeuse Web", "Experte en méthode Agile", "Administratrice réseau en devenir"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
@@ -50,7 +50,7 @@ $(document).ready(function(){
 
     // owl carousel script
     $('.carousel').owlCarousel({
-        strings: ["Developpeur Web", "Expert en méthode Agile", "Administrateur réseau en devenir"],
+        strings: ["Developpeuse Web", "Experte en méthode Agile", "Administratrice réseau en devenir"],
         margin: 20,
         loop: true,
         autoplay: true,
